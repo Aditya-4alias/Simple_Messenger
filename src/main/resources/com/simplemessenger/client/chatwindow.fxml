@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.simplemessenger.client.ChatWindowController"
+            stylesheets="@chat.css">
+
+    <top>
+        <HBox spacing="8" alignment="CENTER_LEFT" styleClass="chat-header">
+            <padding><Insets top="10" left="10" right="10" bottom="10"/></padding>
+            <ImageView fitWidth="28" fitHeight="28" preserveRatio="true">
+                <image>
+                    <Image url="@/com/simplemessenger/client/comment.png" />
+                </image>
+            </ImageView>
+            <Label fx:id="chatTitle" styleClass="chat-title"/>
+        </HBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true" vbarPolicy="AS_NEEDED" hbarPolicy="NEVER">
+            <VBox fx:id="chatArea" spacing="5" padding="10"/>
+        </ScrollPane>
+    </center>
+
+    <bottom>
+        <HBox spacing="10" padding="10">
+            <TextField fx:id="messageField" HBox.hgrow="ALWAYS" promptText="Type your message..." styleClass="input-field"/>
+            <Button text="Send" fx:id="sendButton" onAction="#sendMessage" styleClass="send-button"/>
+        </HBox>
+    </bottom>
+</BorderPane>

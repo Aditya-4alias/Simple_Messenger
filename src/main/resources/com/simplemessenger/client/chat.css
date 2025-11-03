@@ -1,0 +1,91 @@
+/* ===== Root / Window ===== */
+.root {
+    -fx-font-family: "Segoe UI", "Arial";
+    -fx-background-color: #f6ede6;
+}
+
+/* ===== User List ===== */
+.user-list {
+    -fx-background-color: #f7e9d9;
+    -fx-border-color: #e6cda9;
+    -fx-border-width: 0 1 0 0;
+}
+.user-list-title {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-fill: #4b2e1e;
+    -fx-padding: 0 0 8 0;
+}
+
+/* list view items */
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e8d2b8;
+    -fx-border-radius: 6;
+}
+
+/* ===== Chat area ===== */
+.chat-container {
+    -fx-background-color: transparent;
+}
+
+.chat-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4b2e1e;
+}
+
+/* chat area box */
+#chatArea, .chat-area, .chat-scroll {
+    -fx-background-color: #ffffff00; /* transparent so overall background shows */
+}
+
+/* message styles */
+.message-you {
+    -fx-background-color: #b5854a;
+    -fx-text-fill: white;
+    -fx-background-radius: 16;
+    -fx-padding: 8 12;
+    -fx-alignment: center-right;
+}
+
+.message-other {
+    -fx-background-color: #f3e0c7;
+    -fx-text-fill: #4b2e1e;
+    -fx-background-radius: 16;
+    -fx-padding: 8 12;
+    -fx-alignment: center-left;
+}
+
+/* ===== Input & Buttons ===== */
+.input-field {
+    -fx-background-color: #fff;
+    -fx-background-radius: 8;
+    -fx-border-color: #e8d2b8;
+    -fx-border-radius: 8;
+    -fx-padding: 8;
+    -fx-font-size: 14px;
+}
+
+.input-field:focused {
+    -fx-border-color: #b5854a;
+    -fx-effect: dropshadow(gaussian, rgba(181,133,74,0.16), 5, 0.2, 0, 0);
+}
+
+.send-button {
+    -fx-background-color: #b5854a;
+    -fx-text-fill: white;
+    -fx-background-radius: 18;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 18;
+}
+.send-button:hover {
+    -fx-background-color: #9b6a3c;
+}
+
+/* small utility */
+.label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #4b2e1e;
+}

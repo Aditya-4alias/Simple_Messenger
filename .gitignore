@@ -1,0 +1,35 @@
+# Gradle build output
+/build/
+.gradle/
+
+# IDE settings
+.idea/
+*.iml
+.vscode/
+
+# Android Studio/IntelliJ logs
+*.log
+
+# Local configuration files
+local.properties
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Java class files
+*.class
+
+# Generated files
+gen/
+bin/
+
+# Environment files
+.env
+
+# Node modules (if using JS tools)
+node_modules/
+
+# Misc
+*.swp
+*.swo
